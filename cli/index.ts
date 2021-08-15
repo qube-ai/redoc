@@ -250,7 +250,7 @@ async function bundle(pathToSpec, options: Options = {}) {
   const sizeInKiB = Math.ceil(Buffer.byteLength(pageHTML) / 1024);
   const time = Date.now() - start;
   console.log(
-    `\n🎉 bundled successfully in: ${options.output!} (${sizeInKiB} KiB) [⏱ ${time / 1000}s]`,
+    `\n🎉 Qube bundled successfully in: ${options.output!} (${sizeInKiB} KiB) [⏱ ${time / 1000}s]`,
   );
 }
 
