@@ -28,13 +28,16 @@ export class ApiInfo extends React.Component<ApiInfoProps> {
     }
   };
 
+  
+
   render() {
     const { store } = this.props;
     const { info, externalDocs } = store.spec;
     const hideDownloadButton = store.options.hideDownloadButton;
 
     const downloadFilename = info.downloadFileName;
-    const downloadLink = info.downloadLink;
+
+    const playGroundLink = "https://app.swaggerhub.com/apis-docs/Qube-AI/Qube/1.0.0"
 
     const license =
       (info.license && (
@@ -84,7 +87,7 @@ export class ApiInfo extends React.Component<ApiInfoProps> {
                 <DownloadButton
                   download={downloadFilename || true}
                   target="_blank"
-                  href={downloadLink}
+                  href={playGroundLink}
                   onClick={this.handleDownloadClick}
                 >
                   {l('download')}

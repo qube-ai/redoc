@@ -25,7 +25,7 @@ export class SideMenu extends React.Component<{ menu: MenuStore; className?: str
       >
         <MenuItems items={store.items} onActivate={this.activate} root={true} />
         <RedocAttribution>
-          <a target="_blank" rel="noopener noreferrer" href="https://github.com/Redocly/redoc">
+          <a target="_blank" rel="noopener noreferrer" href="https://getqube.in">
             Documentation by Qube
           </a>
         </RedocAttribution>
